@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Pencils - Crafted for Perfection</title>
+  <meta name="description" content="Discover our premium pencils designed for students and professionals. Superior writing experience, ergonomic design, and lasting performance.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav__logo">Premium Pencils</div>
+      <ul class="nav__links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#specs">Specifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <h1>Write Your Story with Precision</h1>
+        <p>Experience the perfect balance of comfort and control with our premium crafted pencils.</p>
+        <a href="#contact" class="button button--primary">Get in Touch</a>
+      </div>
+      <div class="hero__image">
+        <img src="https://images.unsplash.com/photo-1595231712607-a2dd9678d3fb" alt="Premium pencil" loading="lazy">
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <h2>Premium Features</h2>
+      <div class="features__grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">✏️</div>
+          <h3>Premium Graphite</h3>
+          <p>Smooth writing experience with our specially formulated graphite core.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🌳</div>
+          <h3>Sustainable Wood</h3>
+          <p>Crafted from responsibly sourced cedar wood for durability and eco-friendliness.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🎯</div>
+          <h3>Precision Grip</h3>
+          <p>Ergonomic hexagonal design for optimal control and comfort.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+      <h2>Why Choose Our Pencils</h2>
+      <div class="benefits__grid">
+        <div class="benefit-card">
+          <h3>Long-lasting</h3>
+          <p>Superior wear resistance for extended use</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Smudge-free</h3>
+          <p>Clean writing with minimal smudging</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Comfortable</h3>
+          <p>Designed for hours of writing comfort</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="specs" class="specs">
+      <h2>Technical Specifications</h2>
+      <table class="specs__table">
+        <tr>
+          <td>Length</td>
+          <td>19cm</td>
+        </tr>
+        <tr>
+          <td>Diameter</td>
+          <td>7mm</td>
+        </tr>
+        <tr>
+          <td>Hardness</td>
+          <td>HB/2</td>
+        </tr>
+        <tr>
+          <td>Material</td>
+          <td>Cedar Wood</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm" class="contact__form" netlify>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="g-recaptcha" data-sitekey="your-recaptcha-site-key"></div>
+        <button type="submit" class="button button--primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Premium Pencils. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
